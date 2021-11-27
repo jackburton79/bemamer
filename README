@@ -1,0 +1,46 @@
+						--- BeMameR ---
+					the BEos Mame fRontend
+				by Jack Burton aka Stefano Ceccherini
+					(burton666@freemail.it)
+
+BeMameR?!?!? What is it?!?
+
+BeMameR is a Frontend for the Multi Arcade Machine Emulator (MAME).  Since I
+think running MAME from the commandline is a pity, I wrote this little app.
+It's free. You can use it and give it to anyone you want.
+
+
+Requirements:
+- BeOS R5
+- Mame for BeOS (check www.beemulated.net)
+
+
+Installation:
+- Just unzip BeMameR wherever you want. It's done!
+
+
+Nice Features:
+- Show screenshots of games
+
+
+ToDO:
+- Game settings
+- Clean up a lot of things
+- Bugfixes
+
+
+Known Bugs/Strange Behaviours:
+- If BeMameR doesn't work for you, check your mame executable: if it's smaller
+  than ~15Mb, you need to decompress it: open a terminal in the mame folder and
+  write "gzexe -d mame"; hit enter.
+- Sometimes makes MAME hang (just kill it with the BeOS team monitor) 
+- Should show just available games
+- Others which I can't remember
+
+
+Thanks:
+- to the MAME team, for the great work
+- to Yoshi, who ported MAME to BeOS
+- to Caz, who helped me to develop BeMameR, and explained me a lot of
+  things about BeOS programming
+- to Joao Pereira, for the splash screen image
