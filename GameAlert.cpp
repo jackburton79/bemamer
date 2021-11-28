@@ -13,7 +13,6 @@ TGameAlert::TGameAlert(BString string)
 	:BWindow(BRect(0, 0, 350, 300), "Game Alert",
 		B_MODAL_WINDOW, B_ASYNCHRONOUS_CONTROLS|B_NOT_RESIZABLE)
 {
-	//center_window_on_screen(this);
 	BRect bounds(Bounds());
 	bounds.InsetBy(-1, -1);
 	BBox *background = new BBox(bounds, "background");
@@ -49,6 +48,7 @@ TGameAlert::TGameAlert(BString string)
 	background->AddChild(scrollView);
 	
 	AddChild(background);
+	CenterOnScreen();
 }
 
 
