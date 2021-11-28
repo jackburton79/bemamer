@@ -1,7 +1,5 @@
 #include "BeMamerWindow.h"
 #include "BitmapView.h"
-#include "ExtCLV.h"
-#include "ColumnTypes.h"
 #include "GameAlert.h"
 #include "InfoView.h"
 #include "MameIO.h"
@@ -14,6 +12,8 @@
 #include <Application.h>
 #include <Box.h>
 #include <Button.h>
+#include <ColumnListView.h>
+#include <ColumnTypes.h>
 #include <Entry.h>
 #include <File.h>
 #include <PopUpMenu.h>
@@ -24,8 +24,6 @@
 #include <String.h>
 
 #include <cstdio>
-
-#include "Dice.h"
 
 const char* kLVTabNames[] = {
 	"Game Name",
@@ -85,7 +83,7 @@ BeMamerWindow::BeMamerWindow()
 	listRect.right -= 20;
 	listRect.bottom -= 60;
 
-	fListView = new TExtColumnListView(listRect, "list", 
+	fListView = new BColumnListView(listRect, "list", 
 				B_FOLLOW_ALL_SIDES, B_WILL_DRAW|B_NAVIGABLE|B_FRAME_EVENTS,
 				B_FANCY_BORDER, true);
 	fListView->SetSelectionMode(B_SINGLE_SELECTION_LIST);
@@ -608,7 +606,7 @@ BeMamerWindow::Play()
 void
 BeMamerWindow::SelectRandomGame()
 {
-	int32 numItems = fListView->CountRows();
-	uint32 index = Dice(numItems).Roll();
-	fListView->SetFocusRow(index, true);
+	/*int32 numItems = fListView->CountRows();
+	uint32 index = 0; //Dice(numItems).Roll();
+	fListView->SetFocusRow(index, true);*/
 }

@@ -68,7 +68,7 @@ TMameInterface::InitCheck()
 {
 	if (BEntry(sMamePath.Path()).Exists())
 		return B_OK;
-	return B_FILE_NOT_FOUND;
+	return B_ENTRY_NOT_FOUND;
 }
 
 

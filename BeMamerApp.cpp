@@ -3,12 +3,13 @@
 #include "Messages.h"
 #include "PrefsWindow.h"
 #include "Settings.h"
-#include "RectUtils.h"
+//#include "RectUtils.h"
 
 #include <Alert.h>
 #include <FilePanel.h>
 #include <Roster.h>
 
+const char *kAppSignature = "application/x-vnd.BeMameR";
 BFilePanel *gFilePanel;
 
 int
@@ -108,7 +109,6 @@ BeMamerApp::SetDefaults()
 {
 	Settings settings;
 	BRect frame(0, 0, 600, 400);
-	center_rect_on_screen(frame);
 	
 	settings.SetWindowFrame(frame);
 	BPath tmpPath(fPath);

@@ -5,7 +5,7 @@
 #include <FilePanel.h>
 #include <Path.h>
 
-static const char *kAppSignature = "application/x-vnd.BeMameR";
+extern const char *kAppSignature;
 extern BFilePanel *gFilePanel;
 
 class BWindow;

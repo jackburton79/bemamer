@@ -3,7 +3,6 @@
 #include "PrefsViews.h"
 #include "PrefsWindow.h"
 #include "Settings.h"
-#include "RectUtils.h"
 
 #include <Box.h>
 #include <Button.h>
@@ -16,7 +15,7 @@ const BRect kFrame(0, 0, 400, 250);
 TPrefsWindow::TPrefsWindow()
 	:BWindow(kFrame, "Options Window", B_TITLED_WINDOW, B_ASYNCHRONOUS_CONTROLS)
 {
-	center_window_on_screen(this);	
+	//center_window_on_screen(this);	
 	
 	BBox *box = new BBox(Bounds(), "Background");
 	box->ResizeBy(1, 1);

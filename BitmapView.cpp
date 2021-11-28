@@ -1,7 +1,6 @@
 #include "BitmapView.h"
 #include "Messages.h"
 #include "Settings.h"
-#include "RectUtils.h"
 
 #include <Bitmap.h>
 #include <String.h>
@@ -85,7 +84,7 @@ BitmapView::MessageReceived(BMessage *message)
 				BRect bitmapBounds = bitmap->Bounds();
 				if (!Settings().StretchShots()) {
 					viewBounds = bitmapBounds;
-					center_rect_in_view(viewBounds, this);
+					//center_rect_in_view(viewBounds, this);
 				}
 				fBitmapView->SetViewBitmap(bitmap, bitmapBounds, viewBounds, B_FOLLOW_NONE, 0);
 			
