@@ -363,9 +363,6 @@ BeMamerWindow::MessageReceived(BMessage *message)
 			fPlayButton->Invalidate();
 			break;
 		}
-		case B_ABOUT_REQUESTED:
-			(new BAlert("Info", "BeMameR\n\nby Stefano Ceccherini", "Ok"))->Go(NULL);
-			break;
 		default:
 			BWindow::MessageReceived(message);
 			break;

@@ -97,6 +97,13 @@ BeMamerApp::Quit()
 }
 
 
+void
+BeMamerApp::AboutRequested()
+{
+	(new BAlert("Info", "BeMameR\n\nby Stefano Ceccherini", "Ok"))->Go(NULL);
+}
+
+
 BPath
 BeMamerApp::Path() const
 {

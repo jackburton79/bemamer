@@ -16,6 +16,8 @@ public:
 	virtual void ReadyToRun();
 	virtual void MessageReceived(BMessage *message);
 	virtual void Quit();
+	virtual void AboutRequested();
+
 	BPath Path() const;
 	
 private:
